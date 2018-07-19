@@ -1,0 +1,281 @@
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: "ProximaNovaRegular";
+}
+
+main {
+    display: flex;
+    max-width: 124rem;
+    margin: auto;
+    border-right: 0.1rem solid #e7ebeb;
+
+}
+
+sidebar {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+content {
+    width: 70%;
+    background-color: #fff;
+}
+
+.photo {
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../img/photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 4.5rem auto;
+}
+
+.main_info {
+    text-align: center;
+    background-color: #f6f9f9;
+    padding-top: 7rem;
+    border: 0.1rem solid #e7ebeb;
+}
+
+h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: "ProximaNovaBold";
+    font-variant-caps: all-petite-caps;
+}
+
+.position {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #818383;
+}
+
+.city {
+    font-size: 2.4rem;
+    padding-bottom: 3rem;
+    color: #818383;
+}
+
+.city:before {
+    content: url(../img/002-placeholder.png);
+    padding-right: 1.5rem;
+    height: 0.1rem;
+    width: 100%
+}
+
+.short_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.y_o,
+.english {
+    width: 50%;
+    margin: auto;
+    border: 0.1rem solid #e7ebeb;
+}
+
+.y_o {
+    border-right: none;
+}
+
+.info_value {
+    font-size: 3.3rem;
+    padding-top: 3rem;
+}
+
+.info_descr {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+
+.menu {
+    margin-bottom: 25rem;
+}
+
+.menu li {
+    list-style: none;
+    border: 0.1rem solid #e7ebeb;
+    padding-top: 2.2rem;
+    padding-bottom: 2.6rem;
+    padding-left: 4.4rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.7rem;
+}
+
+.about_me:before {
+    content: url(../img/006-avatar.png);
+    padding-right: 2.5rem;
+}
+
+.education:before {
+    content: url(../img/005-glasses.png);
+    padding-right: 2.5rem;
+}
+
+.skills:before {
+    content: url(../img/003-edit.png);
+    padding-right: 2.5rem;
+}
+
+.work_exp:before {
+    content: url(../img/004-settings.png);
+    padding-right: 2.5rem;
+}
+
+.intro {
+    font-size: 2rem;
+    padding-left: 3.8rem;
+    padding-right: 2rem;
+    margin-bottom: 4.3rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 3.8rem;
+    padding-bottom: 5rem;
+}
+
+.contacts a {
+    font-family: "ProximaNovaBold";
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: #818383;
+}
+
+.contacts a:hover {
+    color: #77A7A7;
+}
+
+.linked:before {
+    content: url(../img/002-share.png);
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.insta:before {
+    content: url(../img/001-photo-camera.png);
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.phone:before {
+    content: url(../img/003-phone-call.png);
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.mail:before {
+    content: url(../img/001-envelope.png);
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.conteinier {
+    padding-top: 18.8rem;
+    padding-left: 5.8rem;
+    padding-right: 5rem;
+}
+
+.conteinier h2 {
+    font-size: 3.8rem;
+    font-family: "ProximaNovaBold";
+    margin-bottom: 4.6rem;
+}
+
+.my_list {
+    margin-bottom: 4.6rem;
+}
+
+.conteinier p {
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+}
+
+.my_list li {
+    font-size: 2.1rem;
+    list-style: inside
+}
+
+.hobby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conteinier h3 {
+    font-size: 3rem;
+    font-family: "ProximaNovaBold";
+    width: 100%;
+}
+
+.hobby_item {
+    width: 33%;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.basketball {
+    background-image: url(../img/004-basketball.png);
+}
+
+.photography {
+    background-image: url(../img/003-photo-camera.png);
+}
+
+.gaming {
+    background-image: url(../img/005-joystick.png);
+}

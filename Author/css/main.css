@@ -1,0 +1,640 @@
+@import url("libs.min.css");
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: "OpenSansRegular";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+body {
+    background: #fff;
+    font-family: "OpenSansRegular";
+    min-width: 32rem;
+    color: #484c55;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+/* Humburger Menu */
+
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+    content: "";
+    position: absolute;
+}
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    background-color: #44c0c2;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    left: 0;
+}
+
+.toggle-mnu {
+    float: right;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    display: none;
+    width: 28px;
+    height: 28px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.toggle-mnu span {
+    position: relative;
+    display: block;
+}
+
+.toggle-mnu span:after {
+    top: 18px;
+}
+
+.toggle-mnu span:before {
+    top: 9px;
+}
+
+.toggle-mnu.on span {
+    background-color: transparent;
+}
+
+.toggle-mnu.on span:before {
+    -webkit-transform: rotate(45deg) translate(-1px, 0px);
+    -ms-transform: rotate(45deg) translate(-1px, 0px);
+    transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-mnu.on span:after {
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+    -ms-transform: rotate(-45deg) translate(6px, -7px);
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+/* Humburger Menu End */
+
+/* Header */
+
+.logo h1 {
+    color: #49cbcd;
+    font-family: "LobsterRegular";
+    font-size: 4.2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    float: left;
+    padding: 4rem 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav a {
+    font-family: "OpenSansRegular";
+    color: #484c55;
+    padding: 4rem 2rem;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+header nav a.active,
+header nav a:hover {
+    background-color: #f8f8f8;
+    border-bottom: solid 0.3rem #49cbcd;
+    color: #49cbcd;
+}
+
+/* Header End */
+
+/* Slider */
+
+.slider {
+    margin-bottom: 10.2rem;
+}
+
+.slide {
+    position: relative
+}
+
+.slide img,
+.team-member img {
+    width: 100%;
+    display: block;
+}
+
+.slide .slide-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+}
+
+.slide .slide-text h2 {
+    font-size: 6.2rem;
+    margin-bottom: 5rem;
+    text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+.slide .slide-text p {
+    font-size: 2.3rem;
+    max-width: 39rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    line-height: 3.7rem;
+}
+
+.button-slider {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    border: solid 0.3rem #fff;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    height: 5.2rem;
+    background-repeat: no-repeat;
+    width: 5.1rem;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    opacity: 0.7;
+}
+
+.owl-prev {
+    left: 3%;
+    background-image: url("../img/prev.png");
+}
+
+.owl-next {
+    right: 3%;
+    background-image: url("../img/next.png");
+}
+
+/* Slider End */
+
+/* Team */
+
+.team {
+    margin-bottom: 22.5rem;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 20.1rem;
+    margin: 0 auto 6.9rem auto;
+}
+
+.team h2 {
+    font-size: 4.2rem;
+    margin: 0 auto 12.6rem auto;
+}
+
+.team-member {
+    width: 20.5%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.team-member:not(.team4) {
+    margin-right: 5.5rem;
+}
+
+.team-member .name {
+    font-size: 2.2rem;
+    color: #4e525d;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1.4rem;
+    color: #4e525d;
+}
+
+.team-member .position {
+    margin-bottom: 2.9rem;
+}
+
+/* Team End */
+
+/* Plans */
+
+.plans {
+    margin-bottom: 13rem;
+}
+
+.plan-conteiner {
+    margin: 0 auto;
+    display: inline-block;
+    width: 33%;
+}
+
+.plan-conteiner .plan-name {
+    display: block;
+    background-color: #485460;
+    color: #fff;
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 0;
+    max-width: 36.8rem;
+}
+
+.plan-conteiner .plan-price {
+    font-size: 2rem;
+    margin-bottom: 3.7rem;
+}
+
+.plan-conteiner ul {
+    list-style: none;
+    margin-bottom: 4.7rem;
+}
+
+.plan-conteiner ul li {
+    font-size: 1.4rem;
+}
+
+
+.plan-conteiner ul li:nth-child(-n + 5) {
+    margin-bottom: 2.9rem;
+}
+
+
+.plan-conteiner .button-plan {
+    font-size: 1.4rem;
+    padding: 1rem 4.9rem;
+    background-color: #485460;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: transparent;
+    cursor: pointer;
+}
+
+.plans .plan-conteiner:hover .button-plan,
+.plans .plan-conteiner:hover .plan-name {
+    background-color: #49cbcd;
+}
+
+/* Plans End */
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: url(../img/foot.jpg) no-repeat left top fixed;
+    background-size: cover;
+}
+
+.contacts {
+    float: left;
+    width: 36.6%;
+    margin-bottom: 19.2rem;
+}
+
+footer h2 {
+    font-size: 4.2rem;
+    color: #fff;
+    margin: 9.8rem auto 10.6rem auto;
+}
+
+.contacts h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.moto {
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 3.6rem;
+}
+
+.social {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.social li,
+.social li a {
+    height: 42px;
+    display: inline-block;
+}
+
+.social li a {
+    width: 42px;
+}
+
+.social li:nth-child(-n + 2) {
+    margin: 0 1.5rem 0 0;
+}
+
+.facebook {
+    background: url(../img/social.png) 0 0;
+    width: 42px;
+}
+
+.twitter {
+    background: url(../img/social.png) -42px 0;
+    left: 50px;
+    width: 42px;
+}
+
+.google {
+    background: url(../img/social.png) -84px 0;
+    left: 100px;
+    width: 42px;
+}
+
+.copyrights {
+    font-family: "MyriadProRegular";
+    color: #bface2;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+
+.contacts .tel {
+    font-size: 1.4rem;
+    color: #bface2;
+    text-align: left;
+    display: block;
+    margin-bottom: 0.9rem;
+}
+
+.contacts .mail {
+    font-family: "MyriadProRegular";
+    color: #bface2;
+    font-size: 1.4rem;
+    text-align: left;
+    display: block;
+}
+
+.contact-form {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.contact-form input:first-child {
+    margin-right: 3rem;
+}
+
+.contact-form input {
+    display: inline-block;
+    width: 27rem;
+    height: 4.4rem;
+    margin-bottom: 3.1rem;
+    padding: 0 2rem;
+}
+
+.contact-form textarea {
+    display: inline-block;
+    width: 57rem;
+    height: 17.9rem;
+    resize: none;
+    padding: 1.9rem 2rem;
+    margin-bottom: 3.1rem;
+}
+
+.contact-form textarea,
+.contact-form input {
+    border-radius: 0.5rem;
+    border: transparent;
+    font-size: 1.6rem;
+    color: #c1c1c1;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+    color: #000;
+}
+
+.button-form {
+    font-size: 1.4rem;
+    padding: 1rem 5.3rem;
+    background-color: #49cbcd;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: transparent;
+    cursor: pointer;
+}
+
+.button-form:focus {
+    background-color: #4e525d;
+
+}
+
+/* Footer End */
+
+/* Media */
+
+@media (max-width: 640px) {
+    header nav {
+        width: 100%;
+        display: none;
+    }
+
+    header nav li {
+        display: block;
+        padding: 1rem 4rem;
+    }
+
+    header nav a {
+        border-bottom: solid 0.3rem transparent;
+    }
+
+    .logo h1 {
+        font-size: 3.5rem;
+        line-height: 2.4rem;
+        padding: 1.2rem 0;
+    }
+
+    .toggle-mnu {
+        display: block;
+    }
+
+    .plan-conteiner {
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .plan-conteiner .plan-name {
+        margin: 0 auto 1rem auto;
+        min-width: 100%;
+    }
+
+    .plan-conteiner .plan-price {
+        margin-bottom: 1rem;
+    }
+
+    .plan-conteiner ul {
+        margin-bottom: 1rem;
+    }
+
+    .plan-conteiner ul li:nth-child(-n + 5) {
+        margin-bottom: 1.4rem;
+    }
+
+    .button-plan {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide .slide-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    .slide .slide-text p {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .button-slider {
+        padding: 0.3rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .owl-prev[style],
+    .owl-next[style] {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 998px) {
+    .team {
+        margin-bottom: 3rem;
+    }
+
+    .team h2 {
+        font-size: 3.2rem;
+        margin: 0 auto 2.6rem auto;
+    }
+
+    .team-member {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .team-member .position {
+        margin-bottom: 0.5rem;
+    }
+
+    .team-member p {
+        margin: 0 auto 4rem auto;
+        width: 24.5rem;
+    }
+
+    .team-member img {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+
+@media (max-width: 1182px) {
+
+    .plan-conteiner {
+        background-color: #ccc;
+    }
+
+    .contacts,
+    .contact-form {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer h2 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .social,
+    .copyrights {
+        text-align: center;
+    }
+
+    .contact-form textarea {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-form input {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .contact-form input:first-child {
+        margin-right: 0;
+    }
+
+    .contacts .mail {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        margin-bottom: 4rem;
+    }
+
+    .button-form {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .plans {
+        margin-bottom: 4rem;
+    }
+
+}
+
+/* Media End */

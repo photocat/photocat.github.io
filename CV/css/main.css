@@ -40,7 +40,7 @@ main {
 }
 
 sidebar {
-    width: 30%;
+    width: 25%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@ sidebar {
 }
 
 content {
-    width: 70%;
+    width: 75%;
     background-color: #fff;
 }
 
@@ -59,18 +59,18 @@ content {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    margin: 0 auto 4.5rem auto;
+    margin: 0 auto 2.5rem auto;
 }
 
 .main_info {
     text-align: center;
-    background-color: #f6f9f9;
-    padding-top: 7rem;
+    background-color: #e7ebeb;
+    padding-top: 5rem;
     border: 0.1rem solid #e7ebeb;
 }
 
 h1 {
-    font-size: 3.1rem;
+    font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     font-family: "ProximaNovaBold";
@@ -78,14 +78,14 @@ h1 {
 }
 
 .position {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     margin-bottom: 1.5rem;
     color: #818383;
 }
 
 .city {
-    font-size: 2.4rem;
-    padding-bottom: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.8rem;
     color: #818383;
 }
 
@@ -115,59 +115,66 @@ h1 {
 }
 
 .info_value {
-    font-size: 3.3rem;
-    padding-top: 3rem;
+    font-size: 2rem;
 }
 
 .info_descr {
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 
 .menu {
-    margin-bottom: 25rem;
+    margin-bottom: 4em;
 }
 
-.menu li {
+.button {
     list-style: none;
     border: 0.1rem solid #e7ebeb;
-    padding-top: 2.2rem;
-    padding-bottom: 2.6rem;
-    padding-left: 4.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 7.4rem;
+    color: #000;
+    font-size: 2.1rem;
+    background-color: #fff;
+    transition: 0.3s;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #000;
-    font-size: 2.7rem;
+.button:hover {
+    background-color: #96a5a5;
+    cursor: pointer;
 }
+
+.button.active {
+    background-color: #77A7A7;
+}
+
 
 .about_me:before {
     content: url(../img/006-avatar.png);
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
 
 .education:before {
     content: url(../img/005-glasses.png);
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
 
 .skills:before {
     content: url(../img/003-edit.png);
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
 
 .work_exp:before {
     content: url(../img/004-settings.png);
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
 
 .intro {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-left: 3.8rem;
     padding-right: 2rem;
-    margin-bottom: 4.3rem;
+    margin-bottom: 2.2rem;
 }
 
 .contacts {
@@ -219,13 +226,14 @@ h1 {
     top: 0.5rem;
 }
 
-.conteinier {
-    padding-top: 18.8rem;
+.tabConteinier {
+    padding-top: 16.8rem;
     padding-left: 5.8rem;
     padding-right: 5rem;
+    display: none;
 }
 
-.conteinier h2 {
+.tabConteinier h2 {
     font-size: 3.8rem;
     font-family: "ProximaNovaBold";
     margin-bottom: 4.6rem;
@@ -235,7 +243,7 @@ h1 {
     margin-bottom: 4.6rem;
 }
 
-.conteinier p {
+.tabConteinier p {
     font-size: 2.1rem;
     padding-bottom: 2rem;
 }
@@ -252,7 +260,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.conteinier h3 {
+.tabConteinier h3 {
     font-size: 3rem;
     font-family: "ProximaNovaBold";
     width: 100%;

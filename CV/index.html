@@ -7,7 +7,6 @@
     <title>Andrii Voloshchenko</title>
     <link rel="icon" type="image/png" sizes="" href="">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -26,17 +25,17 @@
                         <p class="info_descr">Y/O</p>
                     </div>
                     <div class="english">
-                        <p class="info_value">B1</p>
+                        <p class="info_value">A2</p>
                         <p class="info_descr">English</p>
                     </div>
                 </div>
             </div>
             <div class="menu_bar">
                 <ul class="menu">
-                    <li class="about_me"><a href="">About Me</a></li>
-                    <li class="education"><a href="">Education</a></li>
-                    <li class="skills"><a href="">Skills</a></li>
-                    <li class="work_exp"><a href="">Work Experience</a></li>
+                    <li class="about_me tab_link button" onclick="openTab(event, 'about_me_containier')" id="defaultOpen">About Me</li>
+                    <li class="education tab_link button" onclick="openTab(event, 'education_containier')">Education</li>
+                    <li class="skills tab_link button" onclick="openTab(event, 'skills_containier')">Skills</li>
+                    <li class="work_exp tab_link button" onclick="openTab(event, 'work_exp_containier')">Experience</li>
                 </ul>
             </div>
             <p class="intro">Interested in working with me? Awesome! I'm available for full-time. Get in touch:
@@ -48,8 +47,80 @@
                 <a class="mail" href="mailto:andrii.voloshchenko@yahoo.com">mail me</a>
             </div>
         </sidebar>
-        <content class="about_me_containier conteinier">
+        <content class="tabConteinier" id="about_me_containier">
             <h2>About Me</h2>
+            <p>Hi there! My name is Andrii and I'm looking for a job. I fall into quick study category of people. Attention to details and sense of responsibility are my strong sides. My goal is to be a part of the company, where I could apply my knowledge and skills, contribute to the success of the company I work for.
+            </p>
+            <ul class="my_list">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Corporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>orporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+            </ul>
+            <h3>What I love to do</h3>
+            <div class="hobby">
+                <div class="basketball hobby_item">
+                    <p>Basketball</p>
+                </div>
+                <div class="photography hobby_item">
+                    <p>Photography</p>
+                </div>
+                <div class="gaming hobby_item">
+                    <p>Gaming</p>
+                </div>
+            </div>
+        </content>
+        <content class="tabConteinier" id="education_containier">
+            <h2>Education</h2>
+            <p>Hi there! My name is Andrii and I'm looking for a job. I fall into quick study category of people. Attention to details and sense of responsibility are my strong sides. My goal is to be a part of the company, where I could apply my knowledge and skills, contribute to the success of the company I work for.
+            </p>
+            <ul class="my_list">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Corporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>orporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+            </ul>
+            <h3>What I love to do</h3>
+            <div class="hobby">
+                <div class="basketball hobby_item">
+                    <p>Basketball</p>
+                </div>
+                <div class="photography hobby_item">
+                    <p>Photography</p>
+                </div>
+                <div class="gaming hobby_item">
+                    <p>Gaming</p>
+                </div>
+            </div>
+        </content>
+        <content class="tabConteinier" id="skills_containier">
+            <h2>Skills</h2>
+            <p>Hi there! My name is Andrii and I'm looking for a job. I fall into quick study category of people. Attention to details and sense of responsibility are my strong sides. My goal is to be a part of the company, where I could apply my knowledge and skills, contribute to the success of the company I work for.
+            </p>
+            <ul class="my_list">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Corporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>orporis consequatur in enim accusamus fuga, amet reprehenderit debitis totam possimus assumenda eos ullam.</li>
+            </ul>
+            <h3>What I love to do</h3>
+            <div class="hobby">
+                <div class="basketball hobby_item">
+                    <p>Basketball</p>
+                </div>
+                <div class="photography hobby_item">
+                    <p>Photography</p>
+                </div>
+                <div class="gaming hobby_item">
+                    <p>Gaming</p>
+                </div>
+            </div>
+        </content>
+        <content class="tabConteinier" id="work_exp_containier">
+            <h2>Work Experience</h2>
             <p>Hi there! My name is Andrii and I'm looking for a job. I fall into quick study category of people. Attention to details and sense of responsibility are my strong sides. My goal is to be a part of the company, where I could apply my knowledge and skills, contribute to the success of the company I work for.
             </p>
             <ul class="my_list">
@@ -74,6 +145,7 @@
         </content>
     </main>
     <footer></footer>
+<script src="/js/index.js"></script>
 </body>
 
 </html>

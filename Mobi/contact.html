@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Mobi</title>
+    <meta name="charset" content="utf-8" />
+    <meta name="keywords" content="mobile, applications" />
+    <meta name="description" content="Shop of mobile applications" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1, maximum-scale=1,
+    user-scalable=no">
+    <link rel="stylesheet" href="vendor/normalize/normalize.css" />
+    <link href="https://select2.github.io/dist/css/select2.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="header clearfix">
+        <a class="header-logo" href="index.html"><img src="img/logo.png" width="155" height="44" alt="Mobi" /></a>
+        <ul class="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="contact.html">Contact</a>
+                <ul class="header-submenu">
+                    <li><a href="contact-about.html">About Us</a></li>
+                    <li><a href="#link">Our Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-main">
+        <div class="contact-hero">
+            <div class="contact-hero-header-text">
+                <h1 class="contact-hero-header">TALK TO US?</h1>
+                <p class="contact-hero-text">The form below can help us help you better.</p>
+            </div>    
+        </div>
+        <div class="contact-form">
+            <div class="contact-form-inner clearfix">
+                <div class="contact-left-col">
+                    <h1 class="contact-form-headline">Contact Us</h1>
+                    <h2>JUST ASK US ANYTHING</h2>
+                    <form  action="#link">
+                        <label>SUBJECT FOR YOUR MESSAGE<br>
+                    <select class="request" id="request" name="request">
+                    <option>General information request</option>
+                    </select>        
+                        </label>
+                        <div class="contact-details"><label>CONTACT DETAILS<br>
+                    <input type="text" name="user-name" placeholder="Your Name (optional)">
+                        
+                            <input type="email" name="user-email" placeholder="Email"></label>
+                        </div>
+                        <label>YOUR INQUIRY OR COMMENTS<br>
+                    <textarea name="user-message" placeholder="Message (optional)"></textarea>
+                </label>
+                        <button class="contact-form-button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-right-col">
+                    <h1>GLOBAL HEADQUARTERS</h1>
+                    <p>41 University Drive, Suite 202 Newttown, PA 18940, USA</p>
+                    <span class="contact-right-col-span-left">P: +1-267-759-9000</span><span class="contact-right-col-span-right">F: +1-267-759-8989</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright &copy; 2016
+        </p>
+    </div>
+    <ul class="off-canvas-menu">
+            <li class="off-canvas-menu-header">Little help?</li>
+            <li><a href="#link">Additional link</a></li>
+            <li><a href="#link">Additional contact</a></li>
+            <li><a href="#link">FAQ</a></li>
+    </ul>
+    <script type="text/javascript" src="https://select2.github.io/vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://select2.github.io/dist/js/select2.full.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".request").select2();
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $.fn.customSelect = function() {
+            $(this).wrap('<div class="select-wrapper">');
+            var setActiveElement = function (elem) {
+                var $elem = $(elem),
+                $option = $elem.find('option:selected');
+
+                $elem.parent().attr('data-select-label', $option.text());
+            };
+
+            setActiveElement($(this));
+
+            $(this).on('change', function () {
+                setActiveElement($(this));
+                $(this).blur();
+            });
+        };
+
+        $('select').each(function() {
+            $(this).customSelect();
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Mobi</title>
+	<meta name="charset" content="utf-8" />
+	<meta name="keywords" content="mobile, applications" />
+	<meta name="description" content="Shop of mobile applications" />
+	<meta name="viewport" content="width=device-width,
+    initial-scale=1, maximum-scale=1,
+    user-scalable=no">
+	<link rel="stylesheet"  href="http://qtip2.com/v/stable/jquery.qtip.css" />
+	<link rel="stylesheet" href="vendor/normalize/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+	<div class="header clearfix">
+		<a class="header-logo" href="index.html"><img src="img/logo.png" width="155" height="44" alt="Mobi" /></a>
+		<ul class="header-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Products</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li class="active"><a href="contact.html">Contact</a>
+			<ul class="header-submenu">
+                <li><a href="contact-about.html">About Us</a></li>
+                <li><a href="#link">Our Team</a></li>
+            </ul>
+			</li>
+		</ul>
+	</div>
+    <div class="contact-about">
+		<div class="contact-about-hero">
+            <div class="contact-about-hero-header-text">
+                <h1 class="contact-about-hero-header">About Us</h1>
+                <p class="contact-about-hero-text">We are great team of great passinate specialists</p>
+            </div>    
+        </div>
+    <div class="about">
+    <div class="about-inner">
+        <h1 class="about-inner-header">Who we are</h1>
+        <div class="about-content">
+            Mobi is a leading global company specialising in the provision of Mobile Apps, Hardware, Managed and Professional Services. We deliver full end-to-end solutions that encompass the whole stack of 
+            <span data-tooltip>Web and Mobile Systems</span>
+            <div class="tooltiptext">
+                <h1>Our Stack of technologies includes:</h1>
+                <div>
+                    Support of all popuplar desktop and mobile systems<br />
+                    Development of entreprise-solutions across globe.
+                    <div class="tooltip-img">
+                        <img src="img/logos.png" alt="Логотипы" />
+                    </div>
+                </div>
+            </div>
+            with a strong focus on Engineered Systems, Database Management services and Business Analytics.
+            <br />
+            <br />
+            We help organisations leverage their technology to gain a competitive advantage and make their business more responsive to the changing demands of a competitive market place.
+            <br />
+            <br />
+            With offices in the UK, Australia, the U.S. and Poland, Mobi is committed to ensuring organisations worldwide receive the most from their investments into partnership with our company.
+        </div>
+    </div>
+</div>
+
+	<div class="footer">
+        <p>
+            Copyright &copy; 2016
+        </p>
+    </div>
+    <ul class="off-canvas-menu">
+            <li class="off-canvas-menu-header">Little help?</li>
+            <li><a href="#link">Additional link</a></li>
+            <li><a href="#link">Additional contact</a></li>
+            <li><a href="#link">FAQ</a></li>
+    </ul>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://qtip2.com/v/stable/jquery.qtip.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $('span[data-tooltip]').each(function() {
+            $(this).qtip({
+                content: {
+                    text: $(this).next('.tooltiptext')
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

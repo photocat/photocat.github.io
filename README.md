@@ -1,4 +1,4 @@
-# photocat.github.io
+# Demonstration for CV
 Demonstration
 
 1. [Author HTML/CSS](https://photocat.github.io/Author/)

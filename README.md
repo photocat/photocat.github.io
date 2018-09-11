@@ -6,4 +6,5 @@ Demonstration
 3. [Pure CSS Face](https://photocat.github.io/Face/)
 4. [Mobi HTML/CSS](https://photocat.github.io/Mobi/)
 5. [JS Multiplication table](https://photocat.github.io/MultTable/)
+6. [Simple React.js todo app](https://photocat.github.io/todo/)
 

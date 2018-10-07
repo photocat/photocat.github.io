@@ -7,4 +7,5 @@ Demonstration
 4. [Mobi HTML/CSS](https://photocat.github.io/Mobi/)
 5. [JS Multiplication table](https://photocat.github.io/MultTable/)
 6. [Simple React.js todo app](https://photocat.github.io/todo/)
+7. [Spirit8 HTML/CSS/JS/Gulp/Sass](https://photocat.github.io/spirit8/)
 

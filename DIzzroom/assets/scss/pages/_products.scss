@@ -1,0 +1,40 @@
+.page-products {
+    width: 100%;
+
+    .wrapper {
+        padding-top: 17.1rem;
+        margin: 0 auto;
+        width: 78.75%;
+        min-width: 11.35rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 6.3rem;
+    }
+
+    &__item {
+        transition: opacity 0.25s;
+        a {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        &_name {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-weight: $regular;
+        }
+
+        &:hover {
+            opacity: 0.44;
+        }
+    }
+}

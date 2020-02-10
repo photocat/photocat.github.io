@@ -1,0 +1,46 @@
+.lang {
+    min-width: 5.6rem;
+    position: absolute;
+    font-family: $main;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: $medium;
+    right: 2.2rem;
+    top: 29%;
+    padding: 0.8rem 1.5rem;
+    background-color: $white;
+    border-radius: 6px;
+    z-index: 101;
+
+    &.is-open {
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.23);
+    }
+}
+
+.lang__option {
+    display: block;
+}
+
+.lang__chevron {
+    display: inline-block;
+    float: right;
+    transform: rotate(90deg);
+}
+
+.lang__option {
+    padding: 0.6rem 0;
+    
+    &:hover,
+    &:focus {
+        opacity: 0.44;
+    }
+}
+.lang__list {
+    display: none;
+}
+.is-open {
+    
+    .lang__chevron {
+        transform: rotate(270deg);
+    }
+}

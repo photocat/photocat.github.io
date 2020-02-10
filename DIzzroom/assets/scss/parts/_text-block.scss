@@ -1,0 +1,40 @@
+.text-block {
+    position: relative;
+    z-index: 1;
+    p {
+        max-width: 58.7rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: $regular;
+        padding: 7rem 0;
+        line-height: calc(22 / 16);
+    }
+
+    &.last {
+        p {
+            padding-bottom: 0;
+        }
+    }
+
+    .button {
+        margin-top: 4rem;
+    }
+
+}
+
+.animated-text {
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+}
+
+.animated-text-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animated-text-hide {
+    transform: translateY(15rem);
+    opacity: 0;
+}

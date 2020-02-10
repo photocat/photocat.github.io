@@ -1,0 +1,118 @@
+// border-box model
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// long placeholder ends ...
+input[placeholder] {
+    text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+    text-overflow: ellipsis;
+}
+
+// hide placeholder on focus
+:focus::-webkit-input-placeholder {
+    //color: transparent;
+}
+
+:focus::-moz-placeholder {
+    //color: transparent;
+}
+
+:focus:-moz-placeholder {
+    //color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    //color: transparent;
+}
+
+// label fix
+label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+// only vertical resize
+textarea {
+    resize: vertical;
+}
+
+// no outline
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+// img resize render
+img[src$=".gif"],
+img[src$=".png"],
+img[src$=".jpg"] {
+    //image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    //image-rendering: -o-crisp-edges;
+    /* Opera */
+    //image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    //image-rendering: crisp-edges;
+    //-ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+}

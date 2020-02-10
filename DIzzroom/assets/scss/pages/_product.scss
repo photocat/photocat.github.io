@@ -1,0 +1,115 @@
+.product-slider {
+    width: 100%;
+    margin-top: 16.6rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4.2rem;
+
+    &__container {
+        width: 84rem;
+        height: 40rem;
+    }
+
+    .swiper-slide {
+        height: 100%;
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+            object-fit: unset;
+            object-position: unset;
+            margin: 0 auto;
+        }
+    }
+
+    .product-slider__controls {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 112rem;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .product-slider__prev,
+    .product-slider__next {
+        cursor: pointer;
+        transition: all 0.25s;
+
+        img {
+            max-width: 1.6rem;
+        }
+
+        &:hover,
+        &:active {
+            opacity: 0.44;
+        }
+    }
+
+    .product-slider__prev {
+        .slider-arrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.product-details {
+    width: 100%;
+
+    .wrapper {
+        width: 84rem;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__name {
+        width: 84rem;
+        margin: 0 auto;
+        font-weight: $medium;
+        font-size: 2.8rem;
+        margin-bottom: 1.9rem;
+        text-transform: uppercase;
+    }
+
+    &__left {
+        flex: 1;
+        padding-right: 6.9rem;
+    }
+
+    &__text {
+        font-weight: $regular;
+        line-height: calc(21 / 16);
+        font-size: 1.6rem;
+    }
+
+    &__right {
+        width: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .button {
+            margin-bottom: 4.2rem;
+        }
+    }
+
+    &__pdf {
+        font-size: 1.6rem;
+        font-weight: $medium;
+        text-transform: lowercase;
+        text-align: center;
+        text-decoration: underline;
+        transition: all 0.25s;
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+            opacity: 0.44;
+        }
+    }
+}

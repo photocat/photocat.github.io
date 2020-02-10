@@ -1,0 +1,21 @@
+.two-images {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $white;
+
+    .image-left {
+        width: 56.944%;
+    }
+
+    .image-right {
+        width: 40.972%;
+    }
+
+    img {
+        width: 100%;
+    }
+}

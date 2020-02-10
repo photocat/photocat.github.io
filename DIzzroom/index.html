@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="./vendor/one-page-scroll/fullpage.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <title>Dizzrom</title>
+</head>
+
+<body>
+    <div id="fullpage" class="main">
+        <header id="header" class="header">
+            <div class="header-wrapper">
+                <div class="site-branding">
+                    <a href="./index.html">
+                        <img src="./assets/img/main-logo.svg" alt="Dizzrom logo">
+                    </a>
+                </div>
+                <div class="main-menu-container">
+                    <ul class="main-menu">
+                        <li class="menu-item current_page_item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="menu-item has-sub-menu">
+                            <a href="#">Каталог</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="./products.html">Диваны</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./products.html">Кровати</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./products.html">Кресла</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./products.html">Интерьер</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./about.html">О нас</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/projects.html">Проекты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <a href="#" id="lang-toggle" class="lang__option lang__option--current">
+                        ру <span class="lang__chevron">›</span>
+                    </a>
+                    <ul class="lang__list">
+                        <li>
+                            <a href="#" class="lang__option">укр</a>
+                        </li>
+                        <li>
+                            <a href="#" class="lang__option">eng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section id="hero" class="main-page-hero section" data-anchor="firstSection">
+            <div class="swiper-container main-page-hero__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 1366px)"
+                                    srcset="./assets/img/baner_slider.jpg 1x,
+                                            ./assets/img/baner_slider@2x.jpg 2x"/>
+                            <source media="(max-width: 1365px)"
+                                    srcset="./assets/img/baner_slider.jpg"/>
+                            <source media="(min-width: 1920px)"
+                                    srcset="./assets/img/baner_slider@2x.jpg"/>
+                            <img src="./assets/img/baner_slider.jpg" alt="First slide">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 1366px)"
+                                    srcset="./assets/img/baner_slider2.jpg 1x,
+                                            ./assets/img/baner_slider2@2x.jpg 2x"/>
+                            <source media="(max-width: 1440px)"
+                                    srcset="./assets/img/baner_slider2.jpg"/>
+                            <source media="(min-width: 1920px)"
+                                    srcset="./assets/img/baner_slider2@2x.jpg"/>
+                            <img src="./assets/img/baner_slider2.jpg" alt="First slide">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 1366px)"
+                                        srcset="./assets/img/baner_slider3.jpg 1x,
+                                                ./assets/img/baner_slider3@2x.jpg 2x"/>
+                            <source media="(max-width: 1365px)"
+                                    srcset="./assets/img/baner_slider3.jpg"/>
+                            <source media="(min-width: 1920px)"
+                                    srcset="./assets/img/baner_slider3@2x.jpg"/>
+                            <img src="./assets/img/baner_slider3.jpg" alt="First slide">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <a href="#secondSection" class="hero-arrow">
+                <img src="./assets/img/arrow.svg" alt="Следующая секция">
+            </a>
+        </section>
+
+        <section id="first" class="category-section section" data-anchor="secondSection">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 1366px)"
+                            srcset="./assets/img/baner_slider2.jpg 1x,
+                                    ./assets/img/baner_slider2@2x.jpg 2x"/>
+                    <source media="(max-width: 1440px)"
+                            srcset="./assets/img/baner_slider2.jpg"/>
+                    <source media="(min-width: 1920px)"
+                            srcset="./assets/img/baner_slider2@2x.jpg"/>    
+                    <img src="./assets/img/baner_slider2.jpg" alt="Диваны">
+                </picture>
+                <h1 class="category-section__title">Диваны</h1>
+                <div class="fader"></div>
+            </a>
+        </section>
+
+        <section id="second" class="category-section section">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 1366px)"
+                                srcset="./assets/img/baner_slider3.jpg 1x,
+                                        ./assets/img/baner_slider3@2x.jpg 2x"/>
+                    <source media="(max-width: 1365px)"
+                            srcset="./assets/img/baner_slider3.jpg"/>
+                    <source media="(min-width: 1920px)"
+                            srcset="./assets/img/baner_slider3@2x.jpg"/>
+                    <img src="./assets/img/baner_slider3.jpg" alt="Кровати">
+                </picture>
+                <h1 class="category-section__title">Кровати</h1>
+                <div class="fader"></div>
+            </a>
+        </section>
+
+        <section id="third" class="category-section section">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 1366px)"
+                                srcset="./assets/img/baner_slider4.jpg 1x,
+                                        ./assets/img/baner_slider4@2x.jpg 2x"/>
+                    <source media="(max-width: 1365px)"
+                            srcset="./assets/img/baner_slider4.jpg"/>
+                    <source media="(min-width: 1920px)"
+                            srcset="./assets/img/baner_slider4@2x.jpg"/>
+                    <img src="./assets/img/baner_slider4.jpg" alt="Кресла">
+                </picture>
+                <h1 class="category-section__title">Кресла</h1>
+                <div class="fader"></div>
+            </a>
+        </section>
+
+        <section id="fourth" class="category-section section">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 1366px)"
+                                srcset="./assets/img/baner_slider5.jpg 1x,
+                                        ./assets/img/baner_slider5@2x.jpg 2x"/>
+                    <source media="(max-width: 1365px)"
+                            srcset="./assets/img/baner_slider5.jpg"/>
+                    <source media="(min-width: 1920px)"
+                            srcset="./assets/img/baner_slider5@2x.jpg"/>
+                    <img src="./assets/img/baner_slider5.jpg" alt="Интерьер">
+                </picture>
+                <h1 class="category-section__title">Интерьер</h1>
+                <div class="fader"></div>
+                <a href="#firstSection" id="toTop">
+                    <img src="./assets/img/arrow.svg" alt="Вверх страницы">
+                </a>
+            </a>
+        </section>
+
+        <footer id="footer" class="footer section fp-auto-height">
+            <div class="footer__wrapper">
+                <div class="site-branding">
+                    <a href="./index.html">
+                        <img src="./assets/img/main-logo.svg" alt="Dizzrom logo">
+                    </a>
+                </div>
+                <div class="social-menu-container">
+                    <ul class="social-menu">
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/logo_facebook.png" alt="Facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/logo_instagram.png" alt="Instagram icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/logo_pinterest.png" alt="Pinterest icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact-container">
+                    <a href="tel:+380954918460">
+                        <img class="contact-icon" src="./assets/img/phone_icon.png" alt="Phone icon">
+                        <span class="contact-text">+38(095)-491-84-60</span>
+                    </a>
+                    <a href="mailto:dizzroom@gmail.com">
+                        <img class="contact-icon" src="./assets/img/mail_icon.png" alt="Mail icon">
+                        <span class="contact-text">dizzroom@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copyright">Dizzroom &copy; 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/vendor/swiper/swiper.min.js"></script>
+    <script src="/vendor/one-page-scroll/fullpage.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+.showrooms {
+    &__topbar {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-bottom: 2.8rem;
+        border-bottom: solid 1px $grey;
+
+        &-left,
+        &-right {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 50%;
+            justify-content: center;
+            text-align: center;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: $medium;
+                line-height: calc(19 / 16);
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-left {
+            p {
+                text-transform: uppercase;
+            }
+
+            select {
+                height: 3rem;
+                width: 15rem;
+                margin: 0 auto;
+            }
+        }
+
+        &-right {
+            .contact-icon {
+                max-width: 1.2rem;
+                height: auto;
+                margin-right: 8px;
+            }
+        
+            .contact-text {
+                font-weight: $regular;
+                font-size: 1.6rem;
+            }
+
+            .showrooms-contact-container {
+                display: flex;
+                flex-flow: column wrap;
+                width: auto;
+                
+                a {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0;
+                    transition: opacity 0.25s;
+        
+                    &:first-child {
+                        margin-bottom: 1.6rem;
+                    }
+        
+                    &:hover {
+                        opacity: 0.44;
+                    }
+
+                    &:last-child {
+                        .contact-text {
+                            font-weight: $medium;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

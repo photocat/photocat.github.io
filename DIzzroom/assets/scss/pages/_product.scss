@@ -27,7 +27,9 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        width: 112rem;
+        max-width: 112rem;
+        width: 100%;
+        padding: 0 2rem;
         position: absolute;
         z-index: 2;
         top: 50%;

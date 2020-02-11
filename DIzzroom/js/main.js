@@ -106,7 +106,39 @@ $(document).ready(function() {
             }
         }
     });
+});
 
+/* ELEMENT IN VIEWPORT */
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var animatedScroll = $('.scroll');
+var animatedLoad = $('.load');
+
+$(window).on('scroll', function(){
+    animatedScroll.each(function() {
+        if($(this).isInViewport()) {
+            $(this).addClass('animated-text-show');
+        }
+    });
+});
+
+$(window).on('load', function(){
+    animatedLoad.each(function() {
+        if($(this).isInViewport()) {
+            $(this).addClass('animated-text-show');
+        }
+    });
+});
+
+$(window).on('ready load resize', function(){
     /* HERO */
     var hh = $('#header').outerHeight();
     var wh = $(window).innerHeight();
@@ -117,36 +149,6 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $('#next').offset().top - hh
         },1500)
-    })
-
-    /* ELEMENT IN VIEWPORT */
-    $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-    
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-    
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    var animatedScroll = $('.scroll');
-    var animatedLoad = $('.load');
-    
-    $(window).on('scroll', function(){
-        animatedScroll.each(function() {
-            if($(this).isInViewport()) {
-                $(this).addClass('animated-text-show');
-            }
-        });
-    });
-    
-    $(window).on('load', function(){
-        animatedLoad.each(function() {
-            if($(this).isInViewport()) {
-                $(this).addClass('animated-text-show');
-            }
-        });
     });
 });
 

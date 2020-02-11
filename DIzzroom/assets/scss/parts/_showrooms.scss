@@ -75,4 +75,106 @@
             }
         }
     }
+
+    &__content {
+        padding: 0 8.5rem 0;
+    }
+
+    &__list {
+        padding: 2rem 0;
+    }
+
+    &__item {
+        padding: 0 2.1rem 2rem;
+        border-bottom: solid 1px $grey;
+
+        &:not(:first-child) {
+            padding-top: 2rem;
+        }
+    }
+
+    &__name {
+        font-weight: $medium;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__map {
+        display: block;
+        font-weight: $regular;
+        font-size: 1.4rem;
+        color: #403DB0;
+        margin-bottom: 6px;
+        line-height: calc(17 / 14);
+        transition: all 0.25s;
+        position: relative;
+
+        &:hover {
+            opacity: 0.44;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            border: solid 1px #979797;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            position: absolute;
+            left: -1.4rem;
+            top: 5px;
+        }
+    }
+
+    &__time {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        color: #40343A;
+        margin-bottom: 6px;
+        line-height: calc(17 / 14);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 1.4rem;
+            width: 1.4rem;
+            background-image: url('../img/clock-icon.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -1.4rem;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    }
+
+    &__phone {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: calc(17 / 14);
+        transition: all 0.25s;
+        position: relative;
+
+        &:hover {
+            opacity: 0.44;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 1.4rem;
+            width: 1.4rem;
+            background-image: url('../img/phone_icon.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -1.4rem;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    }
 }

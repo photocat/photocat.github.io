@@ -78,6 +78,14 @@
 
     &__content {
         padding: 0 8.5rem 0;
+
+        &-tab {
+            display: none;
+
+            &.init {
+                display: block;
+            }
+        }
     }
 
     &__list {
@@ -90,6 +98,10 @@
 
         &:not(:first-child) {
             padding-top: 2rem;
+        }
+
+        .wrapper {
+            padding-left: 2rem;
         }
     }
 
@@ -148,6 +160,20 @@
             left: -1.4rem;
             transform: translateX(-50%);
             top: 0;
+        }
+
+        &-alt {
+            &-day {
+                display: inline-block;
+                min-width: 4rem;
+                margin-right: 1.64rem;
+            }
+        }
+
+        &-alt.no-clock{
+            &::before {
+                content: none;
+            }
         }
     }
 

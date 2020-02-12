@@ -106,6 +106,18 @@ $(document).ready(function() {
             }
         }
     });
+
+    /* CONTACT PAGE SELECT */
+    $(document).ready(function() {
+        $('#showrooms').niceSelect();
+    });
+
+    $('#showrooms').change(function(){
+        var city = $(this).children("option:selected").val();
+
+        $('.showrooms__content').find('.showrooms__content-tab').hide();
+        $('.showrooms__content').find(`[data-tab='${city}']`).fadeIn();
+    });
 });
 
 /* ELEMENT IN VIEWPORT */

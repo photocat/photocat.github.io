@@ -105,10 +105,10 @@
                 <div class="showrooms__topbar">
                     <div class="showrooms__topbar-left">
                         <p>Шоу-румы</p>
-                        <select name="" id="">
-                            <option value="">Харьков</option>
-                            <option value="">Днепр</option>
-                            <option value="">Киев</option>
+                        <select name="" id="showrooms">
+                            <option value="1">Харьков</option>
+                            <option value="2">Днепр</option>
+                            <option value="3">Киев</option>
                         </select>
                     </div>
                     <div class="showrooms__topbar-right">
@@ -126,32 +126,108 @@
                     </div>
                 </div>
                 <div class="showrooms__content">
-                    <div class="showrooms__content-tab">
+                    <div class="showrooms__content-tab init" data-tab="1">
                         <ul class="showrooms__list">
                             <li class="showrooms__item">
                                 <h3 class="showrooms__name">ТРЦ «Караван»</h3>
-                                <a class="showrooms__map" href="">ул. Героев Труда, 7 (2 этаж, в середине торгового зала)</a>
-                                <p class="showrooms__time">10:00 - 20:00, без выходных</p>
-                                <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/uoVd2NjCa6VWV6Fr8" target="_blank">ул. Героев Труда, 7 (2 этаж, в середине торгового зала)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
                             </li>
                             <li class="showrooms__item">
                                 <h3 class="showrooms__name">ТЦ «Мебельный Лабиринт»</h3>
-                                <a class="showrooms__map" href="">ул. Героев Труда, 9в (за «Шоком»)</a>
-                                <p class="showrooms__time">10:00 - 20:00, без выходных</p>
-                                <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/XHvHVkv7QhtH5DUQA" target="_blank">ул. Героев Труда, 9в (за «Шоком»)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
                             </li>
                             <li class="showrooms__item">
                                 <h3 class="showrooms__name">Шоу-рум «Dizzroom»</h3>
-                                <a class="showrooms__map" href="">ул. Каштановая, 1а (Отдельно стоящее здание на проспекте Гагарина)</a>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/UrNcVpscYUV4aZkw6" target="_blank">ул. Каштановая, 1а (Отдельно стоящее здание на проспекте Гагарина)</a>
                                 <p class="showrooms__time showrooms__time-alt">
                                     <span class="showrooms__time-alt-day">пн-пт</span>
                                     <span class="showrooms__time-alt-hours">10:00 - 20:00</span>
                                 </p>
-                                <p class="showrooms__time showrooms__time-alt">
+                                <p class="showrooms__time showrooms__time-alt no-clock">
                                     <span class="showrooms__time-alt-day">сб</span>
                                     <span class="showrooms__time-alt-hours">11:00 - 17:00</span>
                                 </p>
                                 <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="showrooms__content-tab" data-tab="2">
+                        <ul class="showrooms__list">
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">ТРЦ «Караван»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/uoVd2NjCa6VWV6Fr8" target="_blank">ул. Героев Дивана, 7 (2 этаж, в середине торгового зала)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">ТЦ «Мебельный Лабиринт»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/XHvHVkv7QhtH5DUQA" target="_blank">ул. Героев Кресла, 9в (за «Шоком»)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">Шоу-рум «Dizzroom»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/UrNcVpscYUV4aZkw6" target="_blank">ул. Кроватная, 1а (Отдельно стоящее здание на проспекте Гагарина)</a>
+                                <p class="showrooms__time showrooms__time-alt">
+                                    <span class="showrooms__time-alt-day">пн-пт</span>
+                                    <span class="showrooms__time-alt-hours">10:00 - 20:00</span>
+                                </p>
+                                <p class="showrooms__time showrooms__time-alt no-clock">
+                                    <span class="showrooms__time-alt-day">сб</span>
+                                    <span class="showrooms__time-alt-hours">11:00 - 17:00</span>
+                                </p>
+                                <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="showrooms__content-tab" data-tab="3">
+                        <ul class="showrooms__list">
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">ТРЦ «Караван»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/uoVd2NjCa6VWV6Fr8" target="_blank">ул. Героев Труда, 7 (2 этаж, в середине торгового зала)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">ТЦ «Мебельный Лабиринт»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/XHvHVkv7QhtH5DUQA" target="_blank">ул. Героев Труда, 9в (за «Шоком»)</a>
+                                    <p class="showrooms__time">10:00 - 20:00, без выходных</p>
+                                    <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
+                            </li>
+                            <li class="showrooms__item">
+                                <h3 class="showrooms__name">Шоу-рум «Dizzroom»</h3>
+                                <div class="wrapper">
+                                    <a class="showrooms__map" href="https://goo.gl/maps/UrNcVpscYUV4aZkw6" target="_blank">ул. Каштановая, 1а (Отдельно стоящее здание на проспекте Гагарина)</a>
+                                <p class="showrooms__time showrooms__time-alt">
+                                    <span class="showrooms__time-alt-day">пн-пт</span>
+                                    <span class="showrooms__time-alt-hours">10:00 - 20:00</span>
+                                </p>
+                                <p class="showrooms__time showrooms__time-alt no-clock">
+                                    <span class="showrooms__time-alt-day">сб</span>
+                                    <span class="showrooms__time-alt-hours">11:00 - 17:00</span>
+                                </p>
+                                <a class="showrooms__phone" href="tel:+380995633445">+38(099)-563-34-45</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -204,6 +280,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="vendor/swiper/swiper.min.js"></script>
     <script src="vendor/one-page-scroll/fullpage.min.js"></script>
+    <script src="vendor/nice-select/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
 
     

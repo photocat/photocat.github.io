@@ -10,7 +10,7 @@ $dropdown_padding: 1.6rem !default;
 // Style the dropdown
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: $grey;
+  background-color: #F6F5F5;
   border-radius: $input_border_radius;
   box-sizing: border-box;
   clear: both;
@@ -35,6 +35,7 @@ $dropdown_padding: 1.6rem !default;
   &:hover {
   }
   &:active, &:focus {
+    
   }
   // Arrow
   &:after {
@@ -57,7 +58,11 @@ $dropdown_padding: 1.6rem !default;
   
   &.open {
     @extend :active;
+    background-color: #FAFAFA;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     &:after {
+      background-color: #FAFAFA;
       transform: rotate(-180deg);
     }
     .list {
@@ -104,14 +109,16 @@ $dropdown_padding: 1.6rem !default;
   // List and options
   .list {
     width: 100%;
-    background-color: $grey;
-    border-radius: $input_border_radius;
-    box-shadow: 0 0 0 1px rgba(#0e0e0e, .11);
+    background-color: #FAFAFA;
+    border-bottom-left-radius: $input_border_radius;
+    border-bottom-right-radius: $input_border_radius;
     box-sizing: border-box;
-    margin-top: 4px;
+    border-top: solid 1px #DBDBDB;
+    margin-top: 0;
     opacity: 0;
     overflow: hidden;
     padding: 0;
+    padding-bottom: 1.6rem;
     pointer-events: none;
     position: absolute;
     top: 100%; left: 0;
@@ -124,8 +131,10 @@ $dropdown_padding: 1.6rem !default;
     }
   }
   .option {
+    color: #4A4A4A;
     cursor: pointer;
-    font-weight: $medium;
+    font-weight: $regular;
+    font-weight: $regular;
     line-height: 3rem;
     list-style: none;
     min-height: $input_height - 2;
@@ -133,16 +142,15 @@ $dropdown_padding: 1.6rem !default;
     padding-left: $dropdown_padding;
     padding-right: $dropdown_padding + 11;
     text-align: left;
-    transition: all 0.2s;
+    transition: all 0.2s, font-weight 0.25s;
 
     &:hover{
-      color: $white;
-      background-color: $brown;
+      color: #40343A;
+      background-color: #eee;
+      font-weight: $medium;
     }
 
     &.focus{
-      color: rgb(175, 175, 175);
-      background-color: $grey;
       cursor: not-allowed;
     }
     

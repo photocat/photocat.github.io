@@ -71,7 +71,11 @@
         }
 
         &:hover {
-            opacity: 0.44;
+            opacity: 0.4;
+        }
+
+        &:active {
+            opacity: 1;
         }
     }
 }

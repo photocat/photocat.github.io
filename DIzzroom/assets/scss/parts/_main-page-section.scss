@@ -23,6 +23,7 @@
     }
 
     #toTop {
+        display: block;
         position: fixed;
         z-index: 100;
         bottom: 7rem;
@@ -31,6 +32,9 @@
         opacity: 0;
         pointer-events: none;
         transition: all 2s;
+        height: 3rem;
+        width: auto;
+        box-sizing: content-box;
     
         &.run {
             opacity: 1;
@@ -53,6 +57,9 @@
     
         img {
             transform: rotate(180deg);
+            height: 100%;
+            width: auto;
+            object-fit: none;
         }
     }
 }

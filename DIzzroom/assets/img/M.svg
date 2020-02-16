@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="контакты" transform="translate(-995.000000, -391.000000)" fill="#40343A" fill-rule="nonzero">
+            <g id="messengers" transform="translate(343.000000, 391.000000)">
+                <g id="messenger" transform="translate(652.000000, 0.000000)">
+                    <path d="M0,20.0587609 C0,9.01304907 8.9542882,0.0587608696 20,0.0587608696 C31.0457118,0.0587608696 40,9.01304907 40,20.0587609 C40,31.1044727 31.0457118,40.0587609 20,40.0587609 C8.9542882,40.0587609 0,31.1044727 0,20.0587609 Z M17.7028273,13.8949899 L6.55400325,25.7264222 L16.6866717,20.188775 L21.8779013,25.7247231 L33.0250261,13.8949899 L23.0215012,19.4326372 L17.7028273,13.8949899 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -33,3 +33,11 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+.about {
+    .text-block {
+        p {
+            font-weight: $light;
+        }
+    }
+}

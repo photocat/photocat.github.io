@@ -6,18 +6,19 @@
         column-gap: 4.9rem;
     }
 
-    &__box {
+    &__box a {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        img {
+        .icon {
             max-width: 4rem;
             min-height: 4rem;
             margin-bottom: 3rem;
+            pointer-events: none;
         }
 
-        a {
+        p {
             display: flex;
             height: 3rem;
             width: 100%;
@@ -29,8 +30,10 @@
             border-radius: 1.5rem;
             background-color: $grey;
             transition: all 0.25s;
+        }
 
-            &:hover {
+        &:hover {
+            p {
                 background-color: $brown;
                 color: $white;
             }

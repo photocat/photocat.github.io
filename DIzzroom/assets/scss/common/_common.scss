@@ -49,4 +49,11 @@ select {
     display: none;
 }
 
+p,
+h1,h2,h3,
+span,
+a {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
 /* common.scss end */

@@ -79,6 +79,7 @@
     align-items: center;
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.03);
     z-index: -1;
+    -webkit-font-smoothing: subpixel-antialiased;
     transform: translateY(-100%);
 
     &__item:not(:last-child) {

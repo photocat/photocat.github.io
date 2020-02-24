@@ -107,6 +107,13 @@ $(document).ready(function() {
                 }
             }
         });
+    } else {
+        $('#toTop').click(function(e){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#hero').offset().top
+            }, 1000);
+        });
     }
 
     /* CONTACT PAGE SELECT */

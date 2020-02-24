@@ -1587,6 +1587,15 @@ a {
   .category-section .category-section__title {
     font-size: 2.5rem;
   }
+  .category-section #toTop {
+    position: absolute;
+    bottom: -0.6rem;
+    right: 0.1rem;
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+    pointer-events: unset;
+  }
 }
 
 .hero {

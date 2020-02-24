@@ -10,7 +10,6 @@
             display: flex;
             flex-flow: column nowrap;
             width: 50%;
-            justify-content: center;
             text-align: center;
 
             p {
@@ -67,12 +66,6 @@
                     }
                     &:active {
                         opacity: 1;
-                    }
-
-                    &:last-child {
-                        .contact-text {
-                            font-weight: $medium;
-                        }
                     }
                 }
             }

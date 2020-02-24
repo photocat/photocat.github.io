@@ -54,3 +54,18 @@
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .main-page-hero {
+        padding-top: 7rem;
+    }
+
+    .swiper-slide,
+    .category-section {
+        height: 19rem;
+    }
+
+    .hero-arrow {
+        display: none;
+    }
+}

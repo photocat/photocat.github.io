@@ -60,12 +60,17 @@
         padding-top: 7rem;
     }
 
-    .swiper-slide,
-    .category-section {
-        height: 19rem;
+    .swiper-slide {
+        height: 38rem;
     }
 
     .hero-arrow {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .swiper-slide {
+        height: 19rem;
     }
 }

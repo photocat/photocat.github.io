@@ -33,3 +33,39 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .messengers {
+        padding-bottom: 0 2rem 4.4rem;
+
+        &__container {
+            column-gap: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .messengers {
+        padding-bottom: 0;
+
+        &__container {
+            grid-template-columns: 1fr;
+        }
+
+        &__box a {
+            margin-bottom: 3.5rem;
+    
+            .icon {
+                margin-bottom: 2.6rem;
+            }
+    
+            p {
+                width: 15rem;
+            }
+
+            &:last-child {
+                margin-bottom: 4.4rem;
+            }
+        }
+    }
+}

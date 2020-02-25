@@ -20,3 +20,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .contacts-top {
+        margin-top: 11.2rem;
+        padding-bottom: 6.3rem;
+
+        &__title {
+            margin-bottom: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .contacts-top {
+    
+        &__text {
+            p {
+                padding: 0 2rem;
+            }
+        }
+    }
+}

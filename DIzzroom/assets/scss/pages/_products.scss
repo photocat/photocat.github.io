@@ -2,7 +2,7 @@
     width: 100%;
 
     .wrapper {
-        padding-top: 17.1rem;
+        padding: 17.1rem 0 6.8rem;
         margin: 0 auto;
         width: 78.75%;
         min-width: 11.35rem;
@@ -35,6 +35,34 @@
 
         &:hover {
             opacity: 0.44;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-products__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .page-products {
+
+        .wrapper {
+            padding-top: 11.2rem;
+            padding-bottom: 6.8rem;
+        }
+    
+        &__list {
+            grid-template-columns: 1fr;
+            grid-row-gap: 2.8rem;
+        }
+
+        &__item {
+        
+            img {
+                margin-bottom: 1rem;
+            }
         }
     }
 }

@@ -231,6 +231,10 @@
 
                     li:not(:last-child) {
                         margin: 0 0 2.3rem;
+
+                        &.current_page_item > a {
+                            opacity: 0.4;
+                        }
                     }
                 }
             }

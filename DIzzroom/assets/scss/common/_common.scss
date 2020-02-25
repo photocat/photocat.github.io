@@ -56,4 +56,10 @@ a {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+@media only screen and (max-width: 1024px) {
+    .main {
+        min-height: 78.8vh;
+    }
+}
+
 /* common.scss end */

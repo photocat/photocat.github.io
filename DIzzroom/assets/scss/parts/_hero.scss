@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
 
     img,
     picture {
@@ -26,5 +27,29 @@
     .hero-arrow {
         left: auto;
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: 45rem;
+        padding-top: 7rem;
+        box-sizing: content-box;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hero {
+        height: 22rem;
+
+        &__title {
+            color: $brown;
+            position: absolute;
+            width: 100%;
+            text-align: left;
+            font-size: 2.7rem;
+            bottom: -7.8rem;
+            padding: 0 1.6rem;
+        }
     }
 }

@@ -131,11 +131,11 @@ $(document).ready(function() {
     });
 
     /* LIGHTBOX ON PRODUCT PAGE */
+    var $overlay = $('<div id="overlay"></div>');
+    var $image = $('<img/>')
+    var $close = $('<span class="close"></span>')
+    var slide = $('.product-slider .swiper-slide a');
     if($(window).width() > 1024) {
-        var $overlay = $('<div id="overlay"></div>');
-        var $image = $('<img/>')
-        var $close = $('<span class="close"></span>')
-        var slide = $('.product-slider .swiper-slide a');
         $overlay.append($image, $close);
 
         $('body').append($overlay);
@@ -151,6 +151,10 @@ $(document).ready(function() {
 
         $('#overlay').click(function(){
             $(this).fadeOut();
+        });
+    } else {
+        slide.click( function(e){
+            e.preventDefault();
         });
     }
 

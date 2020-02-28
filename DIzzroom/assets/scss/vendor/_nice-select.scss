@@ -32,7 +32,6 @@ $dropdown_padding: 1.6rem !default;
   white-space: nowrap;
   width: 15rem;
   margin:  0 auto;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
   
   // Arrow
   &:after {
@@ -58,6 +57,7 @@ $dropdown_padding: 1.6rem !default;
     background-color: #FAFAFA;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
     &:after {
       background-color: #FAFAFA;
       transform: rotate(-180deg);

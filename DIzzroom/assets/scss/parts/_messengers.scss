@@ -31,6 +31,13 @@
             background-color: $grey;
             transition: all 0.25s;
         }
+
+        &:hover {
+            p {
+                background-color: $brown;
+                color: $white;
+            }
+        }
     }
 }
 

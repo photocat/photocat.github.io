@@ -2271,7 +2271,7 @@ a {
   .page-products__list {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-row-gap: 5rem;
+    grid-row-gap: 7rem;
   }
   .page-products__item img {
     margin-bottom: 1rem;

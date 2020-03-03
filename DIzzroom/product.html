@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="vendor/animate/animate.min.css">
     <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="vendor/magnific/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <title>Dizzroom</title>
 </head>
@@ -119,7 +120,7 @@
             <div class="swiper-container product-slider__container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="./assets/img/product_slider.jpg">
+                        <a href="./assets/img/baner_slider.jpg">
                             <picture>
                                 <source media="(min-width: 1366px)"
                                         srcset="./assets/img/product_slider.jpg 1x,
@@ -133,7 +134,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./assets/img/product_slider2.jpg">
+                        <a href="./assets/img/baner_slider2.jpg">
                             <picture>
                                 <source media="(min-width: 1366px)"
                                         srcset="./assets/img/product_slider2.jpg 1x,
@@ -147,7 +148,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./assets/img/product_slider3.jpg">
+                        <a href="./assets/img/baner_slider3.jpg">
                             <picture>
                                 <source media="(min-width: 1366px)"
                                         srcset="./assets/img/product_slider3.jpg 1x,
@@ -234,7 +235,20 @@
     <script src="vendor/swiper/swiper.min.js"></script>
     <script src="vendor/one-page-scroll/fullpage.min.js"></script>
     <script src="vendor/nice-select/jquery.nice-select.min.js"></script>
+    <script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.swiper-wrapper').find('a').magnificPopup({
+            type: 'image',
+            tClose: 'Закрыть',
+            gallery: {
+                enabled:true,
+                tPrev: 'Назад',
+                tNext: 'Вперёд',
+                tCounter: '%curr% из %total%'
+            }
+        });
+    </script>
 
     
 </body>

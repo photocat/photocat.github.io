@@ -110,6 +110,27 @@ $(document).ready(function() {
             }
         });
     } else {
+        $(window).on('scroll load', function(){
+            var arrowTop = $('#toTop').offset().top;
+            var arrowBottom = arrowTop + $('#toTop').outerHeight();
+            var sectionHeight = $('#first').outerHeight();
+            var footerTop = $('#footer').offset().top;
+            var footerHeight = $('#footer').outerHeight();
+
+            var vt = $(window).scrollTop();
+            var vb = vt + $(window).height();
+        
+
+            if(vt > sectionHeight) {
+                $('#toTop').show().addClass('run');
+                if(vb-footerTop>0) {
+                    $('#toTop').css('bottom', vb-footerTop)
+                }
+            } else {
+                $('#toTop').hide().removeClass('run');
+            }
+        });
+
         $('#toTop').click(function(e){
             e.preventDefault();
             $('html, body').animate({
@@ -129,35 +150,6 @@ $(document).ready(function() {
         $('.showrooms__content').find('.showrooms__content-tab').hide();
         $('.showrooms__content').find(`[data-tab='${city}']`).fadeIn();
     });
-
-    /* LIGHTBOX ON PRODUCT PAGE */
-    var $overlay = $('<div id="overlay"></div>');
-    var $image = $('<img/>');
-    var $close = $('<span class="close"></span>');
-    var slide = $('.product-slider .swiper-slide a');
-    if($(window).width() > 1024) {
-        $overlay.append($image, $close);
-
-        $('body').append($overlay);
-
-        slide.click( function(e){
-            e.preventDefault();
-            var source = $(this).attr('href');
-
-            $image.attr('src', source);
-
-            $overlay.fadeIn();
-        });
-
-        $('#overlay').click(function(){
-            $(this).fadeOut();
-        });
-    } else {
-        slide.click( function(e){
-            e.preventDefault();
-        });
-    }
-
 
     /* MOBILE BURGER */
 
@@ -211,14 +203,6 @@ $(window).on('scroll load', function(){
         }
     });
 });
-
-// $(window).on('load', function(){
-//     animatedLoad.each(function() {
-//         if($(this).isInViewport()) {
-//             $(this).addClass('animated-text-show');
-//         }
-//     });
-// });
 
 if($(window).width() > 1024) {
     $(window).on('ready load resize', function(){
